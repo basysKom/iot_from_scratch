@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package iotexample;
+
+message EnvironmentData {
+  double temperature = 1;
+  double pressure = 2;
+  double humidity = 3;
+  oneof co2_level_oneof { double co2_level = 4; }
+  oneof ambient_light_oneof { double ambient_light = 5; }
+}
+
+enum ErrorLevel {
+  UNSPECIFIED = 0;
+  ERROR = 1;
+  WARNING = 2;
+  INFO = 3;
+}
+
+message Event {
+  int32 event_number = 1;
+  ErrorLevel error_level = 2;
+  string message = 3;
+}
+
+message TelemetryMessage {
+  uint64 timestamp = 1;
+  oneof payload {
+    EnvironmentData environment_data = 2;
+    Event event = 3;
+  }
+}
+
+message DeviceMessages {
+  repeated TelemetryMessage telemetry_messages = 1;
+}
