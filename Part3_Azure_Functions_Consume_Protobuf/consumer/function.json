@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "IoTHubMessages",
+      "direction": "in",
+      "eventHubName": "samples-workitems",
+      "connection": "IOTHUB_CONNECTION_STRING",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "dataType": "binary"
+    },
+    {
+      "tableName": "Sensordata",
+      "connection": "STORAGE_CONNECTION_STRING",
+      "name": "sensorDataTableBinding",
+      "type": "table",
+      "direction": "out"
+    },
+    {
+      "tableName": "Events",
+      "connection": "STORAGE_CONNECTION_STRING",
+      "name": "eventsTableBinding",
+      "type": "table",
+      "direction": "out"
+    }
+  ]
+}
