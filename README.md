@@ -1,4 +1,4 @@
-# IoT: Getting started with cloud and modern IoT and IIoT from scratch
+# IoT: Getting started with cloud and modern IoT and IIoT
 
 IoT and IIoT applications are special compared to other kinds of cloud applications as they have to deal with devices existing “outside” of data centers.
 
