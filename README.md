@@ -30,6 +30,6 @@ Example: Usage of the DPS together with a device-side secure element (TPM) via M
 By working through this series you will learn about the major concepts involved in getting your IoT/IIoT device connected to Microsoft Azure.
 The resulting working prototype enables you to make your own first steps. Turning this initial prototype into a product involves a bit more work and experience though. You will need to handle issues of scalability, automatic service deployments, continuous integration, system integration for Embedded Linux and more. 
 
-We are interested to [hear|mailto://sales@basyskom.com] about your upcoming IoT/IIoT projects and would be glad to help. 
+We are interested to [hear](mailto://sales@basyskom.com) about your upcoming IoT/IIoT projects and would be glad to help. 
 
 Checkout our blog at to learn more: https://blog.basyskom.com/2020/cloud-and-iot-from-scratch/
